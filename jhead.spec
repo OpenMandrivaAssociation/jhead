@@ -12,7 +12,6 @@ Group:		Graphics
 Source:		http://www.sentex.net/~mwandel/jhead/%{name}-%{version}.tar.gz
 
 Url:		http://www.sentex.net/~mwandel/jhead/
-BuildRoot:	%_tmppath/%name-%version-%release-root
 # Without jpegtran the nicest features will not work
 Requires:	libjpeg-progs
 
