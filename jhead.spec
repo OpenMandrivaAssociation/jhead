@@ -1,6 +1,6 @@
 %define name	jhead
 %define version	2.7
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Command line tools to read and edit EXIF extensions in JPEG files
 Name:		%{name}
