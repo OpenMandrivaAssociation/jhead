@@ -17,7 +17,6 @@ BuildRoot:	%_tmppath/%name-%version-%release-root
 Requires:	libjpeg-progs
 
 %description
-
 Most digital cameras produce EXIF files, which are JPEG files with
 extra tags that contain information about the image.
 
