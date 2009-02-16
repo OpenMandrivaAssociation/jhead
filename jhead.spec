@@ -1,5 +1,5 @@
 %define name	jhead
-%define version	2.84
+%define version	2.86
 %define release	%mkrel 1
 
 Summary:	Command line tools to read and edit EXIF extensions in JPEG files
@@ -9,7 +9,7 @@ Release:	%{release}
 License:	Public Domain
 Group:		Graphics
 
-Source:		http://www.sentex.net/~mwandel/jhead/%{name}-%{version}.tar.bz2
+Source:		http://www.sentex.net/~mwandel/jhead/%{name}-%{version}.tar.gz
 
 Url:		http://www.sentex.net/~mwandel/jhead/
 BuildRoot:	%_tmppath/%name-%version-%release-root
@@ -48,7 +48,6 @@ program.
 install -d %buildroot%_bindir
 install -m 755 jhead %buildroot%_bindir
 install -d %buildroot%_mandir/man1
-gunzip jhead.1.gz
 install -m 644 jhead.1 %buildroot%_mandir/man1
 
 %clean
