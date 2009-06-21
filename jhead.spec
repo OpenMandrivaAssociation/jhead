@@ -4,7 +4,7 @@ Version:	2.87
 %if %mdkversion < 201000
 %define subrel	1
 %endif
-Release:	%mkrel 0
+Release:	%mkrel 1
 License:	Public Domain
 Group:		Graphics
 URL:		http://www.sentex.net/~mwandel/jhead/
