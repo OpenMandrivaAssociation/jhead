@@ -1,18 +1,13 @@
 Summary:	Command line tools to read and edit EXIF extensions in JPEG files
 Name:		jhead
-Version:	2.90
-%if %mdkversion < 201000
-%define subrel	1
-%endif
-Release:	%mkrel 3
+Version:	2.93
+Release:	1
 License:	Public Domain
 Group:		Graphics
 URL:		http://www.sentex.net/~mwandel/jhead/
 Source0:	http://www.sentex.net/~mwandel/jhead/%{name}-%{version}.tar.gz
-Patch1:		jhead-2.87-format_not_a_string_literal_and_no_format_arguments.diff
 # Without jpegtran the nicest features will not work
 Requires:	libjpeg-progs
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Most digital cameras produce EXIF files, which are JPEG files with extra tags
@@ -36,22 +31,17 @@ See %{_docdir}/jhead/usage.html for how to use this program.
 %prep
 
 %setup -q
-%patch1 -p0 -b .format_not_a_string_literal_and_no_format_arguments
 
 %build
 %make CFLAGS="%{optflags}"
 
 %install
-rm -rf %{buildroot}
 
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_mandir}/man1
 
 install -m0755 jhead %{buildroot}%{_bindir}
 install -m0644 jhead.1 %{buildroot}%{_mandir}/man1
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
