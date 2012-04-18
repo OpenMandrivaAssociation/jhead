@@ -1,7 +1,7 @@
 Summary:	Command line tools to read and edit EXIF extensions in JPEG files
 Name:		jhead
-Version:	2.93
-Release:	2
+Version:	2.95
+Release:	1
 License:	Public Domain
 Group:		Graphics
 URL:		http://www.sentex.net/~mwandel/jhead/
