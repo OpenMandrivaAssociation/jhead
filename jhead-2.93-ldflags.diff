@@ -1,0 +1,19 @@
+--- makefile	2011-12-03 19:33:22.000000000 +0100
++++ makefile.oden	2012-03-03 08:37:54.222028662 +0100
+@@ -4,6 +4,7 @@
+ OBJ=.
+ SRC=.
+ CFLAGS= -O3 -Wall
++LDFLAGS=
+ 
+ all: jhead
+ 
+@@ -14,7 +15,7 @@
+ 	${CC} $(CFLAGS) -c $< -o $@
+ 
+ jhead: $(objs) jhead.h
+-	${CC} -o jhead $(objs) -lm
++	${CC} $(CFLAGS) -o jhead $(objs) $(LDFLAGS) -lm
+ 
+ clean:
+ 	rm -f $(objs) jhead
