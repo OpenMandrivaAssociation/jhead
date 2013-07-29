@@ -1,12 +1,12 @@
 Summary:	Command line tools to read and edit EXIF extensions in JPEG files
 Name:		jhead
-Version:	2.96
+Version:	2.97
 Release:	1
 License:	Public Domain
 Group:		Graphics
 Url:		http://www.sentex.net/~mwandel/jhead/
 Source0:	http://www.sentex.net/~mwandel/jhead/%{name}-%{version}.tar.gz
-Patch0:		jhead-2.93-ldflags.diff
+Patch0:		jhead-2.97-ldflags.diff
 # Without jpegtran the nicest features will not work
 Requires:	libjpeg-progs
 
