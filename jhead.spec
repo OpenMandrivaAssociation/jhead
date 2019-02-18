@@ -6,7 +6,7 @@ License:	Public Domain
 Group:		Graphics
 Url:		http://www.sentex.net/~mwandel/jhead/
 Source0:	http://www.sentex.net/~mwandel/jhead/%{name}-%{version}.tar.gz
-Patch0:		jhead-2.97-ldflags.diff
+#Patch0:		jhead-2.97-ldflags.diff
 # Without jpegtran the nicest features will not work
 Requires:	libjpeg-progs
 
@@ -31,7 +31,7 @@ See %{_docdir}/jhead/usage.html for how to use this program.
 
 %prep
 %setup -q
-%patch0 -p0
+#patch0 -p0
 
 %build
 %make CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
