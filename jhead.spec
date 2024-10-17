@@ -4,7 +4,7 @@ Version:	3.08
 Release:	1
 License:	Public Domain
 Group:		Graphics
-Url:		http://www.sentex.net/~mwandel/jhead/
+Url:		https://www.sentex.net/~mwandel/jhead/
 Source0:	https://github.com/Matthias-Wandel/jhead/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
 # Without jpegtran the nicest features will not work
