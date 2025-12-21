@@ -10,6 +10,7 @@ Source0:	https://github.com/Matthias-Wandel/jhead/archive/refs/tags/%{version}/%
 # Without jpegtran the nicest features will not work
 Requires:	libjpeg-progs
 
+BuildRequires:	make
 %description
 Most digital cameras produce EXIF files, which are JPEG files with extra tags
 that contain information about the image.
